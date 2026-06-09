@@ -13,7 +13,7 @@ new class extends Component
     public function categories(){
         //cara debugging
         //dd(Category::all()->toArray());
-        return Category::latest()->paginate(2);
+        return Category::latest()->paginate(10);
     }
 };
 ?>
